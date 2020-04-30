@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!--linking to bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- linking to external style sheet-->
+    <link rel="stylesheet" href="../cssFolder/saberWorld.css">
+    <!-- linking to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <title>Catalogue</title>
+</head>
+
+<body>
+    <!-- using bootstrap 4 container class-->
+    <div class="container">
+        <!-- making a top section so it's easier to style-->
+        <div class="topSection">
+            <h1 id="heading">Saber World</h1>
+            <!-- making navigation links -->
+            <div id="navLinks">
+              <ul>
+                  <li> <a href="indexHtml.html"><i> Home </i></a> </li>
+                  <li> <a href="pages\about.html"><i> About </i></a> </li>
+                  <li> <a href="pages\reviews.html"><i> Reviews </i></a> </li>
+                  <li> <a href="pages\login.html"><i> Login</a> </i> </li>
+                  <li> <a href="pages\cart.html"><i> Cart</a> </i> </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <!-- making a top section so it's easier to style-->
+    <div class="reviewSection">
+        <h1>Login</h1>
+        <h2>Sign up Here/Login here</h2>
+        <!--making a form which requires email and password -->
+        <form>
+            <div class="form-group ">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group ">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-dark" id="subButton">Submit</button>
+        </form>
+    </div>
+    <!--linking to javascript -->
+    <script type="text/javascript" src="../javascript/cart.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--I used Sidious.html as the template for vader.html,yoda.html ,dooku.html,vader.html and mace.html , the only changes i made to the files are the image links and description paragraphs -->
+
+<head>
+    <meta charset="utf-8">
+    <title>dark side</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="../cssFolder/saberWorld.css">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <title>SaberWorld</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topSection">
+            <h1 id="heading">Saber World</h1>
+            <div id="navLinks">
+              <ul>
+                  <li> <a href="../indexHtml.html"><i> Home </i></a> </li>
+                  <li> <a href="about.html"><i> About </i></a> </li>
+                  <li> <a href="reviews.html"><i> Reviews </i></a> </li>
+                  <li> <a href="login.html"><i> Login</a> </i> </li>
+                  <li> <a href="cart.html"><i> Cart</a> </i> </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="saberSection">
+        <div class="container">
+            <h2>Yoda's Lightsaber-R3499.99</h2>
+            <div class="row">
+                <div class="col-8">
+                    <!--thumbnail gives image a rounded 1px border look -->
+                    <!-- It makes the image scale with the parent element-->
+                    <img id="sectionImg" class="img-thumbnail .img-fluid rounded shadow-none p-3 mb-5 bg-light rounded " src="https://lumiere-a.akamaihd.net/v1/images/yodas-lightsaber_24cee145.jpeg?region=35%2C0%2C1425%2C800&width=768" alt="">
+                    <h3>Pick a colour</h3>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">blue
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">red
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">purple
+                        </label>
+                    </div>
+                    <br>
+                    <h4>Add to cart:</h4>
+                   <img id="addToCart" onclick="productTwoAdd()" class="img-thumbnail .img-fluid  rounded-circle" src="http://webgear.net.au/wp-content/uploads/2017/03/shopping-cart.jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <h3 id="charHead">Master Yoda</h3>
+                    <div id="charImg">
+                        <img class="img-thumbnail .img-fluid  rounded-circle  " src="https://lumiere-a.akamaihd.net/v1/images/Yoda-Retina_2a7ecc26.jpeg?region=0%2C0%2C1536%2C864&width=768" alt="">
+                        <p class="description">
+                            Yoda was a legendary Jedi Master and stronger than most in his connection with the Force.
+                            Small in size but wise and powerful, he trained Jedi for over 800 years, playing integral roles in the Clone Wars.
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">strengths</th>
+                                    <th scope="col">weaknesses</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>high knowledge about the light side</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>force powers</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>strong in the force</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="benefitsList">
+                            <h3>Why choose this lightsaber</h3>
+                            <ul>
+                                <li>increases strength in the light side </li>
+                                <li>increases wisdom </li>
+                                <li>Sith do not like it</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- linking to javascript file -->
+    <script type="text/javascript" src="../javascript/cart.js">
+
+    </script>
+</body>
+
+</html>

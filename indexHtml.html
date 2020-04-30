@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- linking file to bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- linking file to external css -->
+    <link rel="stylesheet" href="cssFolder\saberWorld.css">
+    <!-- linking to google fonts to use fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <title>SaberWorld</title>
+</head>
+
+<body >
+    <!-- using bootstrap 4 container class-->
+    <div class="container">
+        <!-- -->
+        <h1 id="heading">Saber World</h1>
+        <!--making navigation links -->
+        <div id="navLinks">
+            <ul>
+                <li> <a href="indexHtml.html"><i> Home </i></a> </li>
+                <li> <a href="pages\about.html"><i> About </i></a> </li>
+                <li> <a href="pages\reviews.html"><i> Reviews </i></a> </li>
+                <li> <a href="pages\login.html"><i> Login</a> </i> </li>
+                <li> <a href="pages\cart.html"><i> Cart</a> </i> </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- making middle section -->
+
+        <div class="pt1MiddleSection">
+            <!-- internal css for title-->
+            <h1 style="color:black;">What is SaberWorld?</h1>
+            <!-- giving intro of website an id to edit it easier -->
+            <p id="intro">
+                A long long time ago , in a galaxy far far away, people were introduced to the exciting world of lightsaber combat , but there was a problem.
+                The people could not participant in this world until one fateful day a gate was open.This gate is called <b>Saber World</b>.
+            </p>
+        </div>
+        <!-- using bootstrap class container -->
+        <div class="container">
+            <!-- using bootstrap grid to make a row of 3-->
+            <div class="row">
+                <div class="col-4">
+                    <h2>PALPATINE'S LIGHTSABERS -R4999.99</h2>
+                    <!--linking to other file for when user clicks on image -->
+                    <a href="pages\sidious.html"> <img id="homeImg" class="img-thumbnail .img-fluid  rounded-circle " src="https://lumiere-a.akamaihd.net/v1/images/palpatines-lightsaber_c261c820.jpeg?region=69%2C0%2C1422%2C800&width=768" alt="" c>
+                    </a>
+                    <!-- this button adds product to shopping cart using javascript-->
+                    <button type="button" name="button" onclick="productOneAdd()"> add to cart</button>
+
+                </div>
+                <!--repeating what i did for first column -->
+                <div class="col-4">
+                    <h2>Yoda's Lightsaber-R3499.99</h2>
+                    <a href="pages\yoda.html"> <img id="homeImg" class="img-thumbnail .img-fluid rounded-circle " src="https://lumiere-a.akamaihd.net/v1/images/yodas-lightsaber_24cee145.jpeg?region=35%2C0%2C1425%2C800&width=768" alt="">
+                    </a>
+                    <!-- this button adds product to shopping cart using javascript-->
+                    <button type="button" name="button" onclick="productTwoAdd()"> add to cart</button>
+                </div>
+                <!--repeating what i did for first column -->
+                <div class="col-4">
+                    <h2>Darth Vader's lightsaber-R5999.99</h2>
+                    <a href="pages\vader.html"> <img id="homeImg" class="img-thumbnail .img-fluid rounded-circle " src="https://lumiere-a.akamaihd.net/v1/images/vaders-lightsaber_7a490d47.jpeg?region=125%2C0%2C1321%2C743&width=768" alt="">
+                    </a>
+                    <!-- this button adds product to shopping cart using javascript-->
+                    <button type="button" name="button" onclick="productThreeAdd()"> add to cart</button>
+                </div>
+            </div>
+
+        <!--making second row -->
+        <!--repeating what i did for first column -->
+
+            <div class="row">
+                <div class="col-6">
+                    <h2>Mace's lightsaber-R2999.99</h2>
+                    <a href="pages\mace.html"> <img id="homeImg" class="img-thumbnail .img-fluid rounded-circle " src="https://lumiere-a.akamaihd.net/v1/images/mace-windus-lightsaber_96a893e2.jpeg?region=69%2C0%2C1422%2C800&width=768" alt="">
+                    </a>
+                    <!-- this button adds product to shopping cart using javascript-->
+                    <button type="button" name="button" onclick="productFourAdd()"> add to cart</button>
+                </div>
+                <!--repeating what i did for first column -->
+                <div class="col-6">
+                    <h2>Dooku's lightsaber-R2499.99</h2>
+                    <a href="pages\dooku.html"> <img id="homeImg" class="img-thumbnail .img-fluid rounded-circle" src="https://lumiere-a.akamaihd.net/v1/images/count-dookus-lightsaber_b5744c18.jpeg?region=69%2C0%2C1422%2C800&width=768" alt="">
+                    </a>
+                    <!-- this button adds product to shopping cart using javascript-->
+                    <button type="button" name="button" onclick="productFiveAdd()"> add to cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- linking to javascript file -->
+        <script type="text/javascript" src="javascript\cart.js">
+
+        </script>
+</body>
+
+</html>

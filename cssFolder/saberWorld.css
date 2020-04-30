@@ -1,0 +1,308 @@
+/*making webpages center and have a black background color*/
+body {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+#cartBody{
+  color: white;
+}
+/*making top part of website have a center text and increasing size*/
+#heading {
+    padding-top: 0.5em;
+    text-align: center;
+    font-size: 5em;
+}
+
+/*centering navigation links and spacing them*/
+#navLinks {
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    text-align: center;
+    color: white;
+}
+
+/*changing color of navigation inks ,font and font size*/
+#navLinks a {
+    color: white;
+    font-size: 2em;
+    font-family: 'Odibee Sans';
+    vertical-align: baseline;
+}
+
+/*removing bullets and making links horizontal*/
+
+#navLinks li {
+    display: inline;
+    text-decoration: none;
+
+
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+
+    font-style: oblique;
+
+
+}
+
+/*spacing intro of website*/
+
+#intro {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*spacing container class*/
+.container {
+    padding-bottom: 1em;
+}
+
+/*changing size of homepage images and centering them*/
+#homeImg {
+    width: 240px;
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*changing background colour of middle section and spacing it appropriately*/
+.pt1MiddleSection {
+    background-color: yellow;
+    height: 25em;
+    padding-top: 5em;
+    padding-left: 7em;
+    padding-right: 7em;
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+/*making intro of website bolder*/
+.pt1MiddleSection p {
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+
+/*This is the section where users eneter when they clicking on the products in the homepage*/
+
+.saberSection {
+    padding-top: 3em;
+}
+
+/*changing colour of the webpage to white*/
+.saberSection {
+    color: white;
+}
+
+/*spacing paragraphs to be appropriately visible*/
+.saberSection p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*styling lightsaber owner*/
+#charHead {
+
+    font-style: normal;
+    color: #6e1fcf;
+    padding-top: 1.5em;
+}
+
+/*styling producting image to appropriate size */
+#sectionImg {
+    width: 600px;
+    height: 400px;
+
+
+}
+
+/*making image zoom in when user hover over it*/
+
+#sectionImg:hover {
+
+    transform: scale(1.2);
+}
+
+/*applying filter to lightsaber owner and styling image*/
+#charImg {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    height: 280px;
+    width: 300px;
+    filter: grayscale(50%);
+}
+
+/*styling add to cart button*/
+#addToCart {
+    height: 50px;
+    width: 50px;
+}
+
+
+/*styling for when user hovers over table */
+/*changing colour of text and backgound colour */
+td:hover {
+    background-color: yellow;
+    color: black;
+    border-top-style: solid;
+}
+
+th:hover {
+    background-color: yellow;
+    color: black;
+    border-top-style: solid;
+}
+
+/* Styling list */
+.benefitsList {
+    padding-top: 1.5em;
+}
+
+/* changing bullet shape and font of list*/
+.benefitsList li {
+
+    font-style: italic;
+    list-style-type: circle;
+}
+
+
+
+
+/*this is the styling for the review webpage*/
+/*styling review images*/
+#reviewImg {
+    width: 400px;
+    height: 200px;
+}
+
+.reviewSection {
+    padding-top: 3em;
+}
+
+/*changing colour text of review section*/
+.reviewSection {
+    color: white;
+}
+
+/* adding appropriate padding to paragraphs*/
+
+.reviewSection p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+
+
+/* changin text colour of header of review page*/
+#reviewHeader h2 {
+    color: black;
+}
+
+/* changing background colour ,floating section to the the left and changing the font of this section */
+#review1 {
+    background-color: yellow;
+    color: black;
+    width: 47em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    float: left;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 7.5em;
+    font-style: italic;
+
+}
+
+/* changing background colour ,floating section to the the rightand changing the font of this section , */
+#review2 {
+    background-color: yellow;
+    color: black;
+    width: 47em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    float: right;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 7.5em;
+    /*Trying to add animation to this part of the review */
+    animation-name: colorChange;
+    animation-duration: 4s;
+    font-style: italic;
+
+}
+
+@keyframes colorChange {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+/*trying to add animation to reviews page */
+
+#reviewsPage {
+    animation-name: colorChange;
+    animation-duration: 4s;
+    background-color: white;
+}
+
+/* changing colour and text colour of submit button in the login webpage*/
+#subButton {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* changing font size of heading 1 and aligning text*/
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+/*changing font size */
+h2 {
+    font-size: 1.90em;
+}
+
+/*changing colour and font of h1-h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-family: 'Odibee Sans';
+}
+
+/* changing font style,size and family  of paragraphs*/
+p {
+    font-style: italic;
+    font-size: 1.4em;
+    font-family: Arial;
+}
+
+/* adding padding to all images*/
+img {
+    padding: 4em;
+
+}
+
+/* adding padding to all buttons */
+button {
+    padding: 0.25em;
+}
+
+/* aligning text of h2 to center*/
+h2 {
+    text-align: center;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- linking file to bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- linking file to external css -->
+    <link rel="stylesheet" href="../cssFolder/saberWorld.css">
+    <!-- linking to google fonts to use fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <!-- linking jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+</head>
+
+<body id="cartBody" onload="saberCart()">
+    <!-- using bootstrap 4 container class-->
+    <div class="container">
+        <!-- -->
+        <h1 id="heading">Saber World</h1>
+        <!--making navigation links -->
+        <div id="navLinks">
+          <ul>
+              <li> <a href="../indexHtml.html"><i> Home </i></a> </li>
+              <li> <a href="about.html"><i> About </i></a> </li>
+              <li> <a href="reviews.html"><i> Reviews </i></a> </li>
+              <li> <a href="login.html"><i> Login</a> </i> </li>
+              <li> <a href="cart.html"><i> Cart</a> </i> </li>
+          </ul>
+        </div>
+        <h2 id="total"></h2>
+        <button type="button" id="totalButton" name="button"></button>
+    </div>
+    <!-- div to display cart objects-->
+    <div class="">
+        <select id="cartList" class="" name="">
+        </select>
+        <h2> Cart</h2>
+        <div class="" id="divCartObjects">
+        </div>
+        <h2 id="overallCartAmount"></h2>
+        <form>
+            <div class="form-group ">
+                <label for="firstName">Enter you first name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+            </div>
+            <div class="form-group ">
+                <label for="lastName">Enter you last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+            </div>
+            <div class="form-group ">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group ">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group ">
+                <label for="delivery">Choose your delivery option</label>
+                <br>
+                <input type="radio" id="noDelivery" name="delivery">
+                <label for="noDelivery">click for no Pick up</label>
+                <input type="radio" id="delivery" name="delivery">
+                <label for="delivery">click for delivery in 1-2 days</label>
+                <input type="radio" id="delivery10" name="delivery">
+                <label for="delivery10">click for delivery in 3-5 days </label>
+            </div>
+            <div class="form-group ">
+                <label for="discount">Click here for your discount</label>
+                <br>
+                <input type="radio" id="discount" name="discount">
+                <label for="discount">discount</label><br>
+                <input type="radio" id="noDiscount" name="discount">
+                <label for="discount">no discount</label><br>
+                <br>
+                <h3 id="overallCartAmount"></h3>
+            </div>
+            <h2 id="total2"></h2>
+            <div class="" id="confirmOrder">
+            </div>
+        </form>
+    </div>
+    <div class="">
+        <br>
+        <button type="button" id="clearStorage" name="button"> clear Cart</button>
+    </div>
+    <!--linking to javascript -->
+    <script type="text/javascript" src="../javascript/cart.js">
+    </script>
+</body>
+
+</html>

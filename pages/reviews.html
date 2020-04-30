@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Review</title>
+    <!--linking to bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- linking to external css-->
+    <link rel="stylesheet" href="../cssFolder/saberWorld.css">
+    <!-- linking to  google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <title>SaberWorld</title>
+</head>
+
+<body>
+    <!--using bootstrap 4 container class -->
+    <div class="container">
+        <!-- making div so its easier to style top part of website-->
+        <div class="topSection">
+            <h1 id="heading">Saber World</h1>
+            <!--making navigation link -->
+            <div id="navLinks">
+              <ul>
+                  <li> <a href="../indexHtml.html"><i> Home </i></a> </li>
+                  <li> <a href="about.html"><i> About </i></a> </li>
+                  <li> <a href="reviews.html"><i> Reviews </i></a> </li>
+                  <li> <a href="login.html"><i> Login</a> </i> </li>
+                  <li> <a href="cart.html"><i> Cart</a> </i> </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="reviewHeader">
+        <!-- using saber section css to style revews-->
+        <div class="saberSection">
+            <div class="container">
+                <h2>Reviews</h2>
+                <!--making row for review -->
+                <!-- using div to make it easier to style this section-->
+                <div id="review1" class="row">
+                    <div class="col-4">
+                        <!-- reviewer name-->
+                        <h2>John Palpatine</h2>
+                        <!-- reviewer image-->
+                        <img id="reviewImg" class="img-thumbnail .img-fluid rounded " src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/63358d62816549.5aae20c6f24ce.jpg" alt="" c>
+                    </div>
+                    <div class="col-8">
+                        <!-- review -->
+                        <p class="description">
+                            "Great, and frankly I have Saberforge but this small object is nickel, the sound the movements shipped in 4 days a lot of colors,
+                            I photographed those that I prefer, otherwise they all exist with 2 or 3 different intensities
+                            (from the lightest to the darkest), we can mute it, adjust the sound, Adjust the flashing. It's quite complete"
+                        </p>
+                    </div>
+                </div>
+                <!-- using div to make it easier to style this section-->
+                <div id="review2" class="row">
+                    <div class="col-4">
+                        <!--thumbnail gives image a rounded 1px border look -->
+                        <!-- It makes the image scale with the parent element-->
+                        <h2>Susan Solo</h2>
+                        <img id="reviewImg" class="img-thumbnail .img-fluid rounded " src="https://d1xfgk3mh635yx.cloudfront.net/sites/default/files/styles/inline_wide/public/image/attached/1051198-babyjabba1.jpg?itok=kS4nNxlA" alt="" c>
+                    </div>
+                    <div class="col-8">
+                        <p class="description">
+                            " An exceptional product, I regret not having taken a second!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--linking to javascript -->
+    <script type="text/javascript" src="../javascript/cart.js">
+    </script>
+</body>
+
+</html>

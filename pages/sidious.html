@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!--linking to bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--linking to external style sheet -->
+    <link rel="stylesheet" href="../cssFolder/saberWorld.css">
+    <!-- linking to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <title>SaberWorld</title>
+</head>
+
+<body>
+    <!-- using bootstrap 4 container class-->
+    <div class="container">
+        <!-- making section for top of website-->
+        <div class="topSection">
+            <!-- making website header-->
+            <h1 id="heading">Saber World</h1>
+            <!-- making navigation links-->
+            <div id="navLinks">
+              <ul>
+                  <li> <a href="../indexHtml.html"><i> Home </i></a> </li>
+                  <li> <a href="about.html"><i> About </i></a> </li>
+                  <li> <a href="reviews.html"><i> Reviews </i></a> </li>
+                  <li> <a href="login.html"><i> Login</a> </i> </li>
+                  <li> <a href="cart.html"><i> Cart</a> </i> </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <!-- making it easier to edit this section by putting it in a div-->
+    <div class="saberSection">
+        <!-- using bootstrap 4 class-->
+        <div class="container">
+            <h2>PALPATINE'S LIGHTSABERS -R4999.99</h2>
+            <!-- using bootstrap grid -->
+            <div class="row">
+                <div class="col-8">
+                    <img id="sectionImg" class="img-thumbnail .img-fluid rounded shadow-none p-3 mb-5 bg-light rounded " src="https://lumiere-a.akamaihd.net/v1/images/palpatines-lightsaber_c261c820.jpeg?region=69%2C0%2C1422%2C800&width=768" alt="" c>
+                    <!-- msking radio buttons for users to select-->
+                    <h3>Pick a colour</h3>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">blue
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">red
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">purple
+                        </label>
+                    </div>
+                    <br>
+                    <!-- making add to cart button -->
+                    <h4>Add to cart:</h4>
+             <img id="addToCart" onclick="productOneAdd()" class="img-thumbnail .img-fluid  rounded-circle" src="http://webgear.net.au/wp-content/uploads/2017/03/shopping-cart.jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <!-- making a heading-->
+                    <h3 id="charHead">Emperor Palpatine</h3>
+                    <div id="charImg">
+                        <!-- inserting image-->
+                        <img class="img-thumbnail .img-fluid  rounded-circle  " src="https://lumiere-a.akamaihd.net/v1/images/emperor-palpatine-darth-sidious-main_3d82ddaa.jpeg?region=164%2C0%2C953%2C536&width=768" alt="">
+                        <!-- making description-->
+                        <p class="description">
+                            The dark side of the Force is a pathway to many abilities some consider to be unnatural,
+                            and Sheev Palpatine is arguably the most infamous follower of these Sith doctrines. Scheming,
+                            powerful, and evil to the core, Darth Sidious restored the Sith and destroyed the Jedi Order.
+                        </p>
+                        <!-- making table user can hover over-->
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">strengths</th>
+                                    <th scope="col">weaknesses</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>high knowledge about the dark side</td>
+                                    <td>lightsaber deflection</td>
+                                </tr>
+                                <tr>
+                                    <td>force Lightning</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>strong in the force</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="benefitsList">
+                            <h3>Why choose this lightsaber?</h3>
+                            <!-- making a list-->
+                            <ul>
+                                <li>increases strength in the dark side </li>
+                                <li>grant's user powers that some consider unnatural </li>
+                                <li>Jedi do not like it</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- linking to javascript file -->
+    <script type="text/javascript" src="../javascript/cart.js">
+
+    </script>
+</body>
+
+</html>
